@@ -1,5 +1,6 @@
 # Downloads the given MicroPython release
 # Usage: python download_release.py <release>
+# pyright: ignore[reportMissingImports]
 
 import argparse
 import os

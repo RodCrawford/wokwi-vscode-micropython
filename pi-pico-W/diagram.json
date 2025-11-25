@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "author": "Rod Crawford",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-pi-pico-w",
+      "id": "pico",
+      "top": 0,
+      "left": 0,
+      "attrs": { "env": "micropython-20231227-v1.22.0" }
+    },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "led1",
+      "top": -44,
+      "left": 135.5,
+      "attrs": { "common": "anode" }
+    },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "led2",
+      "top": -44,
+      "left": -135.5,
+      "attrs": { "common": "anode" }
+    }
+  ],
+  "connections": [
+    [ "pico:3V3", "led1:COM", "black", [] ],
+    [ "pico:GP16", "led1:R", "red", [] ],
+    [ "pico:GP17", "led1:G", "green", [] ],
+    [ "pico:GP18", "led1:B", "blue", [] ],
+    [ "pico:3V3", "led2:COM", "black", [] ],
+    [ "pico:GP15", "led2:R", "red", [] ],
+    [ "pico:GP14", "led2:G", "green", [] ],
+    [ "pico:GP13", "led2:B", "blue", [] ]
+  ],
+  "dependencies": {}
+} 
