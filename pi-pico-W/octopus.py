@@ -1,4 +1,6 @@
 # pyright: ignore[reportMissingImports]
+# pylance: ignore[reportMissingImports]
+
 import time
 time.sleep(0.1) # Wait for USB to become ready
 

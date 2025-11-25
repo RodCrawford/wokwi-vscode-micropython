@@ -1,5 +1,6 @@
 # SPDX-License-Identifier: MIT
 # pyright: ignore[reportMissingImports]
+# pylance: ignore[reportMissingImports]
 import utime
 import sys
 import machine
